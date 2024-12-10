@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_application/app/modules/home/controllers/home_controller.dart';
-import 'package:flutter_movie_application/app/modules/home/views/Widget/carousel_card_view.dart';
+import 'package:flutter_movie_application/app/modules/home/views/carousel_card_view.dart';
 import 'package:get/get.dart';
 
 class CarouselSliderView extends GetView<HomeController> {
@@ -35,8 +35,8 @@ class CarouselSliderView extends GetView<HomeController> {
                 url: item['url'] ?? '',
                 title: item['title'] ?? '',
                 subTitle: item['subTitle'] ?? '',
-                width: 400,
-                height: 200,
+                width: MediaQuery.of(context).size.width,
+                height: 250,
               );
             },
           );

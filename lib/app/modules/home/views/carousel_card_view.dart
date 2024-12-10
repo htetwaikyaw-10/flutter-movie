@@ -42,16 +42,16 @@ class CarouselCardView extends GetView {
             gradient: LinearGradient(
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
-              stops: const [0.1, 0.9],
+              stops: const [0.1, 0.5],
               colors: [
-                Colors.black.withOpacity(0.4),
+                Colors.black.withOpacity(0.5),
                 Colors.transparent,
               ],
             ),
           ),
         ),
         Positioned(
-          bottom: 50,
+          bottom: 8,
           left: 12,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,7 +69,7 @@ class CarouselCardView extends GetView {
               Text(
                 subTitle,
                 style: const TextStyle(
-                  color: ColorConsts.primaryColor,
+                  color: ColorConsts.secondaryColor,
                   fontSize: 14,
                 ),
                 overflow: TextOverflow.ellipsis,

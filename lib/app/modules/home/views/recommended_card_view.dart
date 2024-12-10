@@ -65,7 +65,7 @@ class RecommendedCardView extends GetView {
         ),
         Positioned(
           top: 4,
-          right: 8,
+          right: 6,
           child: Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(

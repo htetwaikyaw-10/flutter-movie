@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_application/app/data/color_consts.dart';
-import 'package:flutter_movie_application/app/modules/home/views/widget/recommended_card_view.dart';
+import 'package:flutter_movie_application/app/modules/home/views/recommended_card_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import '../controllers/see_all_controller.dart';

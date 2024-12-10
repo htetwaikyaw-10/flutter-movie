@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_application/app/data/color_consts.dart';
-import 'package:flutter_movie_application/app/modules/home/views/widget/carousel_slider_view.dart';
-import 'package:flutter_movie_application/app/modules/home/views/widget/categories_view.dart';
-import 'package:flutter_movie_application/app/modules/home/views/widget/recommended_card_view.dart';
+import 'package:flutter_movie_application/app/modules/home/views/carousel_slider_view.dart';
+import 'package:flutter_movie_application/app/modules/home/views/categories_view.dart';
+import 'package:flutter_movie_application/app/modules/home/views/recommended_card_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/components/avatar/gf_avatar.dart';
@@ -118,6 +118,7 @@ class HomeView extends GetView<HomeController> {
               child: Column(
                 children: [
                   CarouselSliderView(controller, items: items),
+                  const SizedBox(height: 10),
                   Obx(
                     () => Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -128,7 +129,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 25),
                   Padding(
                     padding: const EdgeInsets.only(left: 12, right: 12),
                     child: Row(
@@ -154,7 +155,7 @@ class HomeView extends GetView<HomeController> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 10),
                   Obx(() {
                     return SizedBox(
                       height: 280,
@@ -174,7 +175,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                     );
                   }),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 25),
                   Padding(
                     padding: const EdgeInsets.only(left: 12),
                     child: Row(
@@ -189,7 +190,7 @@ class HomeView extends GetView<HomeController> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Obx(() {
                     return SizedBox(
                       height: 40,
@@ -215,7 +216,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                     );
                   }),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Obx(() {
                     return SizedBox(
                       height: 280,
